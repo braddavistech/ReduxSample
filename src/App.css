@@ -1,14 +1,28 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.Posts {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 8vh;
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  animation: App-logo-grow infinite 3s linear;
+  animation-iteration-count: 3;
+  height: 10vmin;
   pointer-events: none;
+  margin-bottom: 3vh;
 }
 
 .App-header {
+  padding: 5vh 3vw;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,11 +37,91 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes App-logo-grow{
+  0% {
+    width: 30vw;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    width: 40vw;
   }
+  100% {
+    width: 30vw;
+  }
+}
+
+.section_title {
+  display: block;
+  text-align: center;
+}
+
+.new_post_form {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.input_label {
+  display: block;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 7px;
+}
+
+.input_field {
+  width: 80%;
+  font-size: 18px;
+}
+
+.input_textarea {
+  width: 80%;
+  height: 40px;
+  font-size: 18px;
+}
+
+.indiv_post_div {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border: 3px solid #F49800;
+  margin: 15px 0px;
+  border-radius: 10px;
+}
+
+.indiv_post_title {
+  display: block;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.indiv_post_body {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.submit_button {
+  cursor: pointer;
+  color: black;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.submit_button:hover {
+  color: #F49800;
+  background-color: black;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 2px solid #F49800;
 }
